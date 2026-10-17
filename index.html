@@ -485,7 +485,7 @@ function landP(){
   }
   p.vz=0;
   if(p.respawnDrop){p.respawnDrop=false;shake=14;sfx('boom');hazards.push({k:'ring',x:p.x,y:p.y,t:0,dur:.5,maxR:300,friendly:1});boomFx(p.x,p.y,0,20);
-    for(const e of ents)if(hittable(e)&&Math.abs(e.x-p.x)<320)hitEnemy(e,{dmg:5,kd:1,kb:300,launch:350},Math.sign(e.x-p.x)||1);say('¡DE VUELTA AL POGO!','','#39ff6a',1.4)}
+    for(const e of ents)if(hittable(e)&&Math.abs(e.x-p.x)<320)hitEnemy(e,{dmg:5,kd:1,kb:300,launch:350},Math.sign(e.x-p.x)||1);say('BACK IN TO THE GAME!','','#39ff6a',1.4)}
   if(p.st==='jump'||p.st==='jkick'){p.st='idle';p.vx*=.3;dust(p.x,p.y,2)}
 }
 
